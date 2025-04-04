@@ -58,9 +58,13 @@ def trans_to_img(img, drange):
 # root = '/home/yangjie08/stylegan3-main/training-runs/EG3d_v16/00004-stylegan2-images1024x1024-gpus8-batch32-gamma1/network-snapshot-002400.pkl'
 # root = '/home/yangjie08/stylegan3-main/training-runs/EG3d_v12/00010-stylegan2-images1024x1024-gpus8-batch64-gamma1/network-snapshot-017539.pkl'
 # root = '/home/yangjie08/stylegan3-main/training-runs/EG3d_v14/00009-stylegan2-images1024x1024-gpus8-batch32-gamma1/network-snapshot-025000.pkl'
-root = '/home/yangjie08/stylegan3-main/training-runs/EG3d_v16/00004-stylegan2-images1024x1024-gpus8-batch32-gamma1/network-snapshot-012800.pkl'
 
+# LCX1:把预训练模型放置到/CONTENT下：
+root = '/content/network-snapshot-012800.pkl'
+
+#LCX2:把默认的视频模式改为IMG模式：
 mode = 'video' # 'video' 'img'
+
 gen_num = 4  # img mode
 video_num = 4 # video mode
 fps = 30 * 4
