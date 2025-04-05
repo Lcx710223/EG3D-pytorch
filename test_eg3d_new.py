@@ -129,8 +129,8 @@ if mode == 'img':
 
     thre_imgs = np.where((total_imgs > 1) + (total_imgs < -1), 1, 0)  # 溢出位置为1，否则为0
 
-    save_image_grid(total_imgs, 'test_gen_images.png', drange=[-1,1], grid_size=grid_size)
-    save_image_grid(thre_imgs, 'test_thre_images.png', drange=[-1,1], grid_size=grid_size)
+    save_image_grid(total_imgs, 'lcx_test_gen_images.png', drange=[-1,1], grid_size=grid_size)
+    save_image_grid(thre_imgs, 'lcx_test_thre_images.png', drange=[-1,1], grid_size=grid_size)
 elif mode == 'video':
     save_root = './gen_video_examples/cicle'
     grid_z = torch.randn([video_num, G.z_dim], device=device)
