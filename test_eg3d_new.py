@@ -63,7 +63,7 @@ def trans_to_img(img, drange):
 root = '/content/network-snapshot-012800.pkl'
 
 #LCX2:把默认的视频模式改为IMG模式：
-mode = 'video' # 'video' 'img'
+mode = 'img' # 'video' 'img'
 
 gen_num = 4  # img mode
 video_num = 4 # video mode
