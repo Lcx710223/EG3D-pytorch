@@ -1,6 +1,7 @@
 import torch
 from training.training_loop_eg3d import save_image_grid
 # from training.EG3d_v14 import Generator
+# 注意：大G是从V16进口的：
 from training.EG3d_v16 import Generator
 # from training.EG3d_v12 import Generator
 import dnnlib
